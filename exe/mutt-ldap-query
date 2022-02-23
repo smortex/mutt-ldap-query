@@ -26,7 +26,7 @@ worker.gen_config if options[:gen_config]
 worker.edit_config if options[:edit_config]
 exit 0 if options[:gen_config] || options[:edit_config]
 
-unless worker.has_config?
+unless worker.configured?
   warn "#{worker.config_path} does not exist.  Try `#{$PROGRAM_NAME} --gen-config`."
   exit 1
 end
