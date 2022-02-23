@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'net-ldap', '~> 0.17'
   spec.add_dependency 'xdg', '>= 4.0'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end
